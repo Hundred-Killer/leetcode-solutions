@@ -1,4 +1,4 @@
-package main
+package mergenodes
 
 type ListNode struct {
 	Val  int

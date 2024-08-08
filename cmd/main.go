@@ -5,5 +5,21 @@ import (
 )
 
 func main() {
-	fmt.Println(buildArray([]int{0, 2, 1, 5, 3, 4}))
+	fmt.Println(mergeNodes(&ListNode{
+		Val: 0, Next: &ListNode{
+			Val: 3, Next: &ListNode{
+				Val: 1, Next: &ListNode{
+					Val: 0, Next: &ListNode{
+						Val: 4, Next: &ListNode{
+							Val: 5, Next: &ListNode{
+								Val: 2, Next: &ListNode{
+									Val: 0, Next: &ListNode{},
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}).Val)
 }
